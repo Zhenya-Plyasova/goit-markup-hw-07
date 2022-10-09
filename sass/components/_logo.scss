@@ -1,0 +1,17 @@
+.logo {
+    color: $accent-color;
+    text-decoration: none;
+    font-family: "raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo__label--header {
+    color: #000;
+}
+
+.logo__label--footer {
+    color: $back-color;
+}
