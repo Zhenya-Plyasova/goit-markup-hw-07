@@ -1,0 +1,127 @@
+.footer {
+background-color: $temp-color;
+height: 252px;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.footer__links .link {
+    color: $back-color;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    font-style: normal;  
+}
+
+.footer__links .link:hover,
+.footer__links .link:focus{
+    color: $accent-color;
+}
+
+.footer__links .contact {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__container {
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer__list {
+display: flex;  
+align-items: baseline;
+}
+
+.contacts {
+    margin-top: 20px;
+    &__item {
+            margin-bottom: 9px;
+        }
+    
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+}
+
+.footer__social {
+    display: flex;
+    margin-top: 20px;
+}
+
+.footer__title {
+    color: $back-color;
+    @include text(14px, 700, 1.14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer__block:first-child{
+    margin-right: 70px;
+}
+
+.social__link--footer{
+    color: $back-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    @extend %animation;
+}
+
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__link:hover,
+.social__link:focus {
+    background-color: $accent-color;
+}
+
+.signup {
+margin-left: 93px;
+&__form {
+        margin-top: 20px;
+        display: inline-flex;
+    }
+}
+
+.signup__window{
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: $temp-color;
+color: $back-color;
+padding-left: 16px;
+outline: none;
+font-size: 16px;
+line-height: 1.25;
+letter-spacing: 0.03em;
+}
+
+.signup__window:focus {
+    border: 1px solid $accent-color;
+}
+
+.signup__btn {
+    @include button(200px, 12px, inline-flex, rgba(0, 0, 0, 0.15));
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    @extend %animation;
+    &:hover,
+    &:focus {
+            background-color: $active-color;
+        }
+}
+
+.signup__icon {
+    fill: currentColor;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    justify-content: center;
+}

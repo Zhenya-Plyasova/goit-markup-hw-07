@@ -2,16 +2,15 @@
     color: $accent-color;
     text-decoration: none;
     font-family: "raleway", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.19;
     letter-spacing: 0.03em;
+    @include text(26px, 700, 1.19);
+
+    &__label--header {
+            color: #000;
+        }
+    
+    &__label--footer {
+            color: $back-color;
+        }
 }
 
-.logo__label--header {
-    color: #000;
-}
-
-.logo__label--footer {
-    color: $back-color;
-}

@@ -3,3 +3,24 @@
     font-weight: $fw;
     line-height: $lh;
 }
+
+@mixin button($bw, $ml, $bd, $bsc) {
+    font-family: inherit;
+        color: $back-color;
+        background-color: $accent-color;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        width: $bw;
+        height: 50px;
+        border-radius: 4px;
+        border-width: 0;
+        display: $bd;
+        margin-left: $ml;
+        margin-right: auto;
+        box-shadow: 0px 4px 4px $bsc;
+        transition-property: background-color;
+}
+

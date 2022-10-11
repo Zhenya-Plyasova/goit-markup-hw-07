@@ -18,5 +18,14 @@
     "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.autoprefix": [
         "defaults"
+    ],
+    "cSpell.words": [
+        "відомості",
+        "компанію",
+        "навушники",
+        "приватну",
+        "Ресурс",
+        "фоні",
+        "чорні"
     ]
 }

@@ -14,7 +14,7 @@ p {
 }
 
 body {
-    color: var(--primary-color);
+    color: $primary-color;
     font-family: "roboto", sans-serif;
 
 }
@@ -29,7 +29,7 @@ img {
 }
 
 .link {
-    color: var(--secondary-color);
+    color: $secondary-color;
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -38,16 +38,51 @@ img {
     display: flex;
     align-items: center;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
 }
 
 .link:hover,
 .link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .current {
-    color: var(--accent-color);
+    color: $accent-color;
     position: relative;
+}
+
+.container {
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    @extend %animation;
+}
+
+.social__item {
+    margin-right: 10px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__link:hover,
+.social__link:focus {
+    color: $back-color;
+    background-color: $accent-color;
+}
+
+.social__icon {
+    fill: currentColor;
 }

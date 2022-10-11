@@ -5,42 +5,23 @@
     padding-bottom: 200px;
     padding-top: 200px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %centered;
 }
 
 .hero .hero-title {
     color: $back-color;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
     text-align: Center;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %centered;
     letter-spacing: 0.06em;
-    line-height: 1.36;
+    @include text(44px, 900, 1.36);
     width: 696px;
 }
 
 .button {
-    font-family: inherit;
-    color: $back-color;
-    background-color: $accent-color;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    text-align: Center;
-    width: 216px;
-    height: 50px;
-    border-radius: 4px;
-    border-width: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include button(216px, auto, block, rgba(0, 0, 0, 0.25));
+    @extend %animation;
     margin-top: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero .button:active {

@@ -1,5 +1,5 @@
 .section .section-title {
-    color: v$secondary-color;
+    color: $secondary-color;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
@@ -43,7 +43,7 @@
 }
 
 .advantages-list .advantage-item {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px)/4);
     margin-left: 30px;
     margin-right: 0;
 }
