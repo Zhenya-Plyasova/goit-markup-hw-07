@@ -10,12 +10,13 @@ padding-bottom: 60px;
     letter-spacing: 0.03em;
     line-height: 1.71;
     font-style: normal;  
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
 }
 
-.footer__links .link:hover,
-.footer__links .link:focus{
-    color: $accent-color;
-}
+
 
 .footer__links .contact {
     color: rgba(255, 255, 255, 0.6);
@@ -68,7 +69,6 @@ align-items: baseline;
     @extend %animation;
 }
 
-
 .social__item:last-child {
     margin-right: 0;
 }
@@ -99,10 +99,9 @@ outline: none;
 font-size: 16px;
 line-height: 1.25;
 letter-spacing: 0.03em;
-}
-
-.signup__window:focus {
-    border: 1px solid $accent-color;
+&:focus {
+        border: 1px solid $accent-color;
+    }
 }
 
 .signup__btn {

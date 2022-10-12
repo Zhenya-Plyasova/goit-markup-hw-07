@@ -1,34 +1,32 @@
 .about {
     padding-top: 0;
+    &__list {
+            display: flex;
+        }
 }
 
-.about-container {
-    display: flex;
-}
-
-.about-img {
+.about__item {
     margin-right: 30px;
+    &last-child {
+        margin-right: 0;
+    }
 }
 
-.about-img:last-child {
-    margin-right: 0;
-}
-
-.about-thumb {
+.about__wrap {
     position: relative;
+    & .title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        justify-content: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
 }
 
-.about-thumb .title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    justify-content: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 
-.caption-about {
+.about__caption {
     position: absolute;
     display: flex;
     width: 100%;

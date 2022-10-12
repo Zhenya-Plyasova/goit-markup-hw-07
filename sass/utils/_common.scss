@@ -39,11 +39,11 @@ img {
     align-items: center;
     transition-property: color;
     @extend %animation;
-}
+    &:hover,
+    &:focus {
+            color: $accent-color;
+        }
 
-.link:hover,
-.link:focus {
-    color: $accent-color;
 }
 
 .current {
@@ -67,20 +67,18 @@ img {
     align-items: center;
     justify-content: center;
     @extend %animation;
+    &:hover,
+    &:focus {
+            color: $back-color;
+            background-color: $accent-color;
+        }
 }
 
 .social__item {
     margin-right: 10px;
-}
-
-.social__item:last-child {
-    margin-right: 0;
-}
-
-.social__link:hover,
-.social__link:focus {
-    color: $back-color;
-    background-color: $accent-color;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .social__icon {

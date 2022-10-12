@@ -18,32 +18,29 @@
 .site-nav {
     display: flex;
     margin-left: 93px;
+    & .link {
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
 }
 
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .header-contacts {
     display: flex;
     margin-left: auto;
-}
-
-.header-contacts .item {
-    margin-right: 50px;
-}
-
-.header-contacts .link {
+    & .item {
+        margin-right: 50px;
+    }
+ & .link {
     color: $primary-color;
     transition-property: background-color;
     @extend %animation;
- }
+}
+}
 
 .header-contacts .link:hover {
     color: $accent-color;

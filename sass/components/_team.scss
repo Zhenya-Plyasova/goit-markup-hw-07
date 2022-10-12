@@ -54,10 +54,9 @@
 
 .social__item {
     margin-right: 10px;
-}
-
-.social__item:last-child {
-    margin-right: 0;
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
 .social__link:hover,

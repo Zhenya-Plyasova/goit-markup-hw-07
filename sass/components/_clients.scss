@@ -1,40 +1,39 @@
-.clients-list {
-    display: flex;
+.client {
+    @extend .container;
+    &__list {
+            display: flex;
+        }
 }
 
-.client-logo {
-    display: flex;
+.client__logo {
+    @extend %flex;
     align-items: center;
-    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: #afb1b8;
     transition-property: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %animation;
+    &:hover {
+            color: $accent-color;
+            border: 1px solid $accent-color;
+        }
+    
+    &:focus {
+            color: $accent-color;
+            border: 1px solid $accent-color;
+            outline: none;
+        }
 }
 
-.client-item {
+.client__item {
     margin-right: 30px;
+   &:last-child {
+            margin-right: 0;
+        }
 }
 
-.client-item:last-child {
-    margin-right: 0;
-}
-
-.client-logo:hover {
-    color: $accent-color;
-    border: 1px solid $accent-color;
-}
-
-.client-logo:focus {
-    color: $accent-color;
-    border: 1px solid $accent-color;
-    outline: none;
-}
-
-.client-pic {
+.client__pic {
     fill: currentColor;
 }
